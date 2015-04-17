@@ -1,0 +1,33 @@
+.optin form {
+	text-align: left;
+}
+
+.optin h4 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 10px 0 20px;
+}
+
+.optin small {
+	text-align: left !important;
+	margin: 0 !important;
+}
+
+.mc-field-group {
+	width: 48%;
+	float: left;
+	margin-right: 4%;
+}
+
+.mc-field-group:nth-child(2) {
+	margin: 0;
+}
+
+.mc-field-group input[type="text"], .mc-field-group input[type="email"] {
+	width: 100%;
+}
+
+.optin.php {
+	
+}

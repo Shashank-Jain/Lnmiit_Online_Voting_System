@@ -1,0 +1,37 @@
+package jsp;
+
+import java.sql.*;
+
+public class C_msg {
+
+	public static boolean validate(String username, String password) {
+
+		try {
+			Connection c = MySQL.connect();
+
+			MySQL.close(c);
+			Statement st = c.createStatement();
+			ResultSet rs = st.executeQuery("select * from login where rollno='"
+					+ username + "' and password='" + password + "'");
+			String uname = "", pass = "";
+			if (rs.next()) {
+				uname = rs.getString("rollno");
+				pass = rs.getString("password");
+			}
+
+			if (username.equals("") && password.equals("")) {
+				return false;
+			}
+
+			else if (username.equals(uname) && password.equals(pass)) {
+				return true;
+
+			} else
+				return false;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

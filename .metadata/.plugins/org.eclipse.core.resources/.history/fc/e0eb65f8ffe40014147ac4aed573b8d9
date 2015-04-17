@@ -1,0 +1,12 @@
+package jsp;
+
+
+public class C_msg {
+private String username;
+private String password;
+
+public static void validate(String username, String password){
+	
+}
+	
+}
