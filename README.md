@@ -1,4 +1,6 @@
-# Lnmiit_Online_Voting_Syatem
+# Lnmiit_Online_Voting_System
+
+
 
 LNMIIT ONLINE VOTING SYSTEM  is a web portal for the LNMIIT student to fetch all information regarding the LNMIIT GYMKHANA ELECTIONS and to cast their prefernces for the various posts such as president , general secetary science and tech , etc.
 
